@@ -12,3 +12,6 @@
 
 ## ERD
 ![스크린샷 2024-10-04 오후 7 35 20](https://github.com/user-attachments/assets/59b6fded-eb70-4c93-b167-7ddfe413b732)
+
+## REST API 설계
+https://documenter.getpostman.com/view/16631410/2sAXxPAYCq
