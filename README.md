@@ -11,7 +11,8 @@
 - MySQL
 
 ## ERD
-![스크린샷 2024-10-04 오후 7 35 20](https://github.com/user-attachments/assets/59b6fded-eb70-4c93-b167-7ddfe413b732)
+<img width="846" alt="image" src="https://github.com/user-attachments/assets/0a996771-da18-4a40-af32-391ca3034466">
+
 
 ## REST API 설계
 https://documenter.getpostman.com/view/16631410/2sAXxPAYCq
