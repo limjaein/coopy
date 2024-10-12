@@ -1,6 +1,6 @@
-package com.jaein.coopy.domain.entity;
+package com.jaein.coopy.domain.entity
 
-import jakarta.persistence.*;
+import jakarta.persistence.*
 
 @Entity
 class Recipe(
@@ -20,6 +20,18 @@ class Recipe(
 
     var user_id: String = user_id
 
-    @OneToMany
-    val RecipeIngredients: MutableList<RecipeIngredient> = arrayListOf()
+    @OneToMany(mappedBy = "Recipe")
+    @JoinColumn(name = "recipe_id")
+    var ingredients: MutableList<RecipeIngredient> = mutableListOf()
+
+    fun update(name: String, description: String) {
+        this.name = name
+        this.description = description
+    }
+
+    fun addIngredients(ingredients: MutableList<RecipeIngredient>?) {
+        if (ingredients != null) {
+            this.ingredients.addAll(ingredients)
+        }
+    }
 }

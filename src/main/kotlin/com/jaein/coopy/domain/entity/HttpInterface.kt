@@ -1,6 +1,6 @@
-package com.jaein.coopy.domain.entity;
+package com.jaein.coopy.domain.entity
 
-import jakarta.persistence.*;
+import jakarta.persistence.*
 import jakarta.servlet.http.HttpServletRequest
 
 @Entity
