@@ -20,8 +20,7 @@ class Recipe(
 
     var user_id: String = user_id
 
-    @OneToMany(mappedBy = "Recipe")
-    @JoinColumn(name = "recipe_id")
+    @OneToMany(mappedBy = "recipe", fetch = FetchType.LAZY, cascade = [CascadeType.PERSIST])
     var ingredients: MutableList<RecipeIngredient> = mutableListOf()
 
     fun update(name: String, description: String) {
