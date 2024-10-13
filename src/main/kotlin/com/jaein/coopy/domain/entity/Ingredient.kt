@@ -5,7 +5,7 @@ import jakarta.persistence.*
 @Entity
 class Ingredient(
         name: String,
-        user_id: String
+        userId: String
 ) : BaseEntity() {
 
     @Id
@@ -15,6 +15,6 @@ class Ingredient(
 
     var name: String = name
 
-    var user_id: String = user_id
+    var userId: String = userId
             
 }

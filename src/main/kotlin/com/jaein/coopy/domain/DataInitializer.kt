@@ -23,17 +23,17 @@ class DataInitializer (
 
         val ingredient1 = Ingredient(
             name = "마늘",
-            user_id = "1"
+            userId = "1"
         )
 
         val ingredient2 = Ingredient(
             name = "파스타",
-            user_id = "2"
+            userId = "2"
         )
 
         val ingredient3 = Ingredient(
             name = "토마토소스",
-            user_id = "3"
+            userId = "3"
         )
 
         val ingredients = mutableListOf<Ingredient>(
@@ -45,13 +45,13 @@ class DataInitializer (
         val recipe1 = Recipe(
             name = "알리오올리오",
             description = "마늘이 주재료인 오일파스타",
-            user_id = "1"
+            userId = "1"
         )
 
         val recipe2 = Recipe(
             name = "토마토파스타",
             description = "토마토 소스로 만드는 파스타",
-            user_id = "3"
+            userId = "3"
         )
 
         // 추가방법1

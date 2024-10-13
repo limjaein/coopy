@@ -6,7 +6,7 @@ import jakarta.persistence.*
 class Recipe(
         name: String,
         description: String,
-        user_id: String
+        userId: String
 ) : BaseEntity() {
 
     @Id
@@ -18,7 +18,7 @@ class Recipe(
 
     var description: String = description
 
-    var user_id: String = user_id
+    var userId: String = userId
 
     @OneToMany(mappedBy = "recipe", fetch = FetchType.LAZY, cascade = [CascadeType.PERSIST])
     var ingredients: MutableList<RecipeIngredient> = mutableListOf()
