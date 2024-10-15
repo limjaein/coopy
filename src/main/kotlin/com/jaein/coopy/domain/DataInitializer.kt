@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component
 class DataInitializer (
     private val ingredientRepository: IngredientRepository,
     private val recipeRepository: RecipeRepository,
-    private val recipeIngredentRepository: RecipeIngredentRepository,
     private val userRepository: UserRepository
 ) {
 
