@@ -1,4 +1,6 @@
 package com.jaein.coopy.presentation.dto
 
-class UserDTO {
-}
+data class UserDTO (
+        val email: String,
+        val password: String
+)
