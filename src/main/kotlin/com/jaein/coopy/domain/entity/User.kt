@@ -3,6 +3,7 @@ package com.jaein.coopy.domain.entity
 import jakarta.persistence.*
 
 @Entity
+@Table(name = "`user`")
 class User(
         email: String,
         password: String
